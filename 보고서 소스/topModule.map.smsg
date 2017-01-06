@@ -1,0 +1,2 @@
+Warning (10268): Verilog HDL information at topModule.v(113): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at monster_generator.v(30): always construct contains both blocking and non-blocking assignments

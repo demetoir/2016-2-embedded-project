@@ -1,0 +1,66 @@
+--------------------------------------------------------------------------------------
+Timing Analyzer Summary
+--------------------------------------------------------------------------------------
+
+Type           : Worst-case tsu
+Slack          : N/A
+Required Time  : None
+Actual Time    : 82.881 ns
+From           : topIN_SW[0]
+To             : monster_generator:module_moster_generator|monster_generator_index[3]
+From Clock     : --
+To Clock       : topIN_clk_50
+Failed Paths   : 0
+
+Type           : Worst-case tco
+Slack          : N/A
+Required Time  : None
+Actual Time    : 13.146 ns
+From           : VGA_CONTROLLER:module_vga_controller|hsync
+To             : topOUT_VGA_BLANK
+From Clock     : topIN_clk_50
+To Clock       : --
+Failed Paths   : 0
+
+Type           : Worst-case th
+Slack          : N/A
+Required Time  : None
+Actual Time    : 0.615 ns
+From           : topIN_SW[0]
+To             : monster_generator:module_moster_generator|z[17]
+From Clock     : --
+To Clock       : topIN_clk_50
+Failed Paths   : 0
+
+Type           : Clock Setup: 'topIN_clk_50'
+Slack          : N/A
+Required Time  : None
+Actual Time    : 6.58 MHz ( period = 151.932 ns )
+From           : monster_generator:module_moster_generator|counter:module_Hz1_counter|qout[29]
+To             : monster_generator:module_moster_generator|monster_generator_index[3]
+From Clock     : topIN_clk_50
+To Clock       : topIN_clk_50
+Failed Paths   : 0
+
+Type           : Clock Hold: 'topIN_clk_50'
+Slack          : Not operational: Clock Skew > Data Delay
+Required Time  : None
+Actual Time    : N/A
+From           : VGA_data:module_VGA_data|printMonster:module_printMonster3|counter:module_Hz1_counter|qout[31]
+To             : VGA_data:module_VGA_data|printMonster:module_printMonster3|isHitEffect
+From Clock     : topIN_clk_50
+To Clock       : topIN_clk_50
+Failed Paths   : 1516
+
+Type           : Total number of failed paths
+Slack          : 
+Required Time  : 
+Actual Time    : 
+From           : 
+To             : 
+From Clock     : 
+To Clock       : 
+Failed Paths   : 1516
+
+--------------------------------------------------------------------------------------
+
